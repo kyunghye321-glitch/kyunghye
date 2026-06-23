@@ -5,7 +5,7 @@ a = 10
 print(a)
 print(type(a))
 
-# 2. 실수 (float)
+# 2. 실수 (float): 오차를 가진다
 b = 3.14
 print(b)
 print(type(b))
@@ -85,3 +85,19 @@ class Person:
 print(Person)
 print(type(Person))
 
+print("commit push test")
+
+#== : 객체의 값만 비교 || is : 객체 비교
+
+#>> Error: = 는 연산자(operator)가 아니라 대입문(statement)이기 때문
+# n = 10
+# result = (x = n>5)   # 대입하면서 값
+# print(result)
+#= : 대입문 → 값을 반환하지 않음 || := : 대입 연산자 → 값을 반환함
+
+# := 월러스 연산자 사용, result = 우측 표현식 자리에 대입문이 아닌 대입연산자(:=)를 사용 
+# 월러스 연산자는 왼쪽변수에 우측 값을 할당하고 할당된 값을 반환하는 대입연산자
+
+n = 10
+result = (x := n>5)   # 대입하면서 값 반환
+print(result)
